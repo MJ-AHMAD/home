@@ -27,12 +27,6 @@
 <html>
     <head>
         <body>
-            import React from 'react';
-import {CustomCheckoutProvider} from '@stripe/react-stripe-js';
-import {loadStripe} from '@stripe/stripe-js';
-
-const App = () => {
-  return (
     <CustomCheckoutProvider
       stripe={loadStripe('pk_test_51PZzciCyC8OWGlHKRThmLWoQvX29CC6L8d6ExLaM6xGYdXSAQ6ksP4yxqKRLHLvNIIw2OdweUNOe2iNXpCHpXH7W00k6g9ZBKG')}
       options={{clientSecret: '...'}}
