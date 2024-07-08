@@ -1,0 +1,19 @@
+body {
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background-color: #f6f9fc;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.payment-container {
+background: #ffffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+padding: 20px;
+width: calc(100% - 40px);
+max-width: 480px;
+}
