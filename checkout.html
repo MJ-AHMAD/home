@@ -44,8 +44,6 @@
   </div>
   <div>
     <label>Card</label>
-    <!-- Using the same "my-input" class on the -->
-    <!-- regular input above and on this container. -->
     <div class="my-input" id="card-element"></div>
   </div>
 </form>
@@ -54,18 +52,13 @@
 
 <html>
     <body>
-        <!-- Mount the instance within a <label> -->
 <label>Card
   <div id="card-element"></div>
 </label>
-
-<!--
   Or create a <label> with a 'for' attribute,
   referencing the ID of your container.
--->
 <label for="card-element">Card</label>
 <div id="card-element"></div>
-
 <script>
   cardElement.mount('#card-element');
 </script>
