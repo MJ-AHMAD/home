@@ -10,6 +10,13 @@
     <script src="checkout.js" defer></script>
       <script src="https://js.stripe.com/v3/"></script>
   </head>
+  <style>
+  paymentElement.on('change', function(event) {
+  if (event.complete) {
+    // enable payment button
+  }
+});
+    </style>
     <head>
   <title>Checkout</title>
   <script src="https://js.stripe.com/v3/"></script>
