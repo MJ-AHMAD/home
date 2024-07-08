@@ -35,14 +35,6 @@
     padding: 10px;
     border: 1px solid #ccc;
   }
-  element.on('ready', function(event) {
-  // Handle ready event
-});
-  paymentElement.on('change', function(event) {
-  if (event.complete) {
-    // enable payment button
-  }
-});
 </style>
 <html>
     <body>
@@ -61,12 +53,7 @@
 
 <html>
     <body>
-<label>Card
-  <div id="card-element"></div>
-</label>
-  Or create a <label> with a 'for' attribute,
-  referencing the ID of your container.
-<label for="card-element">Card</label>
+<label>Card<div id="card-element">Card</label>
 <div id="card-element"></div>
 <script>
   cardElement.mount('#card-element');
