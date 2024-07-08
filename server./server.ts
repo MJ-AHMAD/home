@@ -1,3 +1,8 @@
+import Stripe from 'stripe';
+const stripe = Stripe('sk_test_51PZzciCyC8OWGlHKE542bwYjZnBTEmCd4nTubWatfDsfQUWXV3pNVe6MDhhYLSJWjwR4CZ9FYNAVCE56cfbIpP2Z00uh7EeZOl', {
+  apiVersion: '2024-06-20; custom_checkout_beta=v1' as any,
+});
+
 import Express from 'express';
 
 const app: Express = express();
