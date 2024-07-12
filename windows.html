@@ -673,6 +673,63 @@ PHP ফাইলটি অ্যাক্সেস করা:
 •  আপনার অ্যাপ্লিকেশনের URL এ যান এবং PHP ফাইলটি অ্যাক্সেস করুন। উদাহরণস্বরূপ, যদি আপনার PHP ফাইলটির নাম import.php হয় এবং আপনার অ্যাপ্লিকেশনের URL https://your-app-name.azurewebsites.net হয়, তাহলে আপনি https://your-app-name.azurewebsites.net/import.php এ যেতে পারেন।
 
 এইভাবে, আপনি আপনার PHP ফাইলটি GitHub রিপোজিটরিতে যুক্ত করে Azure App Service এ ডিপ্লয় করতে পারবেন </your-branch></your-php-file></p>
+  <p>  গিটহাব রিপোজিটরি ক্লোন করা
+ক্লোন করা বলতে বোঝায় আপনার GitHub রিপোজিটরির একটি কপি আপনার লোকাল মেশিনে ডাউনলোড করা। এটি আপনাকে লোকাল মেশিনে কাজ করতে দেয় এবং পরে পরিবর্তনগুলি GitHub এ পুশ করতে দেয়।
+
+ধাপ ১: GitHub রিপোজিটরি ক্লোন করা
+1. 
+GitHub এ যান এবং আপনার রিপোজিটরিতে যান।
+2. 
+Code বোতামে ক্লিক করুন এবং HTTPS URL কপি করুন।
+3. 
+আপনার কম্পিউটারে একটি ফোল্ডার তৈরি করুন যেখানে আপনি রিপোজিটরিটি ক্লোন করতে চান।
+4. 
+টার্মিনাল বা কমান্ড প্রম্পট খুলুন এবং সেই ফোল্ডারে যান:
+
+cd path/to/your/folder
+
+1. 
+নিম্নলিখিত কমান্ডটি চালান:
+
+git clone <repository-url>
+
+উদাহরণস্বরূপ:
+
+git clone https://github.com/your-username/your-repository.git
+
+ধাপ ২: লোকাল রিপোজিটরিতে কাজ করা
+1. 
+টার্মিনাল বা কমান্ড প্রম্পট খুলুন এবং আপনার ক্লোন করা রিপোজিটরির ডিরেক্টরিতে যান:
+
+cd your-repository
+
+1. 
+আপনার PHP ফাইলটি সেই ডিরেক্টরিতে কপি করুন।
+
+ধাপ ৩: Git কমান্ড ব্যবহার করে ফাইলটি যুক্ত করা এবং পুশ করা
+1. 
+নিম্নলিখিত কমান্ডগুলি একে একে চালান:
+
+git add new2.php
+git commit -m "Add PHP file for data import"
+git push origin main
+
+উদাহরণ:
+ধরুন আপনার রিপোজিটরির নাম my-repo এবং আপনার ব্রাঞ্চের নাম main, তাহলে কমান্ডগুলি হবে:
+
+cd path/to/your/folder
+git clone https://github.com/your-username/my-repo.git
+cd my-repo
+cp path/to/new2.php .
+git add new2.php
+git commit -m "Add PHP file for data import"
+git push origin main
+
+ধাপ ৪: GitHub রিপোজিটরিতে ফাইলটি চেক করা
+1. 
+আপনার GitHub রিপোজিটরিতে যান এবং দেখুন new2.php ফাইলটি আপলোড হয়েছে কিনা।
+2. 
+আপনার রিপোজিটরির ফাইল তালিকায় new2.php ফাইলটি দেখতে পাবেন।</repository-url></p>
 </body>
 </html>
 
