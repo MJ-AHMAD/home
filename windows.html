@@ -127,7 +127,63 @@ font-family: 'Tiro Bangla', sans-serif; /* Tiro Bangla ফন্ট ব্যব
 
 </html>
 
-<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>জ্ঞান ও বিশ্বাসের সমন্বয়ে এক উজ্জ্বল প্রজন্মের প্রত্যাশায়</title>
+<style>
+.slideshow-container {
+width: 100%;
+position: relative;
+margin: auto;
+}
+
+.mySlides {
+display: none;
+width: 100%;
+height: auto;
+}
+
+.active {
+display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides active">
+<img src="emojib4.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<img src="emojib3.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<img src="emojib2.png" style="width:100%">
+</div>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+slides[slideIndex-1].style.display = "block";  
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
 <html>
 <head>
 <style>
@@ -345,19 +401,19 @@ display: inline-block;
 
 <h2>Azure CLI এর মূল বৈশিষ্ট্যসমূহ</h2>
 <ul>
-<li>[**ক্রস-প্ল্যাটফর্ম**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%B8-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE): Windows, macOS, এবং Linux এ উপলব্ধ।</li>
-<li>[**অটোমেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%85%E0%A6%9F%E0%A7%8B%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%A8): স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
-<li>[**ইন্টিগ্রেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8): অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
-<li>[**ইন্টারেক্টিভ মোড**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%AD%20%E0%A6%AE%E0%A7%8B%E0%A6%A1): ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
+<li>*ক্রস-প্ল্যাটফর্ম* Windows, macOS, এবং Linux এ উপলব্ধ।</li>
+<li>*অটোমেশন* স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
+<li>*ইন্টিগ্রেশন* অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
+<li>*ইন্টারেক্টিভ মোড* ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
 </ul>
 
 <h2>Azure CLI ইনস্টলেশন</h2>
 <p>Azure CLI ইনস্টল করার জন্য, আপনি বিভিন্ন পদ্ধতি ব্যবহার করতে পারেন:</p>
 <ul>
-<li>[**Windows**](https://www.bing.com/search?form=SKPBOT&q=Windows): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**macOS**](https://www.bing.com/search?form=SKPBOT&q=macOS): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Linux**](https://www.bing.com/search?form=SKPBOT&q=Linux): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Docker**](https://www.bing.com/search?form=SKPBOT&q=Docker): <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
+<li>*Windows* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
+<li>*macOS* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Linux* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Docker* <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
 </ul>
 
 <h2>Azure CLI এ লগইন</h2>
@@ -367,25 +423,25 @@ display: inline-block;
 
 <h2>Azure CLI এর সাধারণ কমান্ডসমূহ</h2>
 <ul>
-<li>[**রিসোর্স গ্রুপ তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
-<li>[**ভি এম তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%AD%E0%A6%BF%20%E0%A6%8F%E0%A6%AE%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
-<li>[**স্টোরেজ অ্যাকাউন্ট তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%9C%20%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%9F%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
-<li>[**ডাটাবেস তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%A1%E0%A6%BE%E0%A6%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B8%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
+<li>*রিসোর্স গ্রুপ তৈরি করা* <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
+<li>*ভি এম তৈরি করা* <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
+<li>*স্টোরেজ অ্যাকাউন্ট তৈরি করা* <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
+<li>*ডাটাবেস তৈরি করা* <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
 </ul>
 
 <h2>Azure CLI এর কিছু গুরুত্বপূর্ণ টুলস</h2>
 <ul>
-<li>[**Azure Resource Manager (ARM)**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Resource%20Manager%20%28ARM%29): এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Monitor**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Monitor): এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
-<li>[**Azure Cost Management**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Cost%20Management): এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Security Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Security%20Center): এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
+<li>*Azure Resource Manager (ARM)* এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Monitor* এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
+<li>*Azure Cost Management* এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Security Center* এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
 </ul>
 
 <h2>শিক্ষার্থীদের জন্য কিছু গুরুত্বপূর্ণ রিসোর্স</h2>
 <ul>
-<li>[**Azure Documentation**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Documentation): <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
-<li>[**Microsoft Learn**](https://www.bing.com/search?form=SKPBOT&q=Microsoft%20Learn): <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
-<li>[**Azure Quickstart Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Quickstart%20Center): এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
+<li>*Azure Documentation* <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
+<li>*Microsoft Learn* <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
+<li>*Azure Quickstart Center* এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
 </ul>
 
 <h1>Azure CLI</h1>
@@ -394,19 +450,19 @@ display: inline-block;
 
 <h2>Azure CLI এর মূল বৈশিষ্ট্যসমূহ</h2>
 <ul>
-<li>[**ক্রস-প্ল্যাটফর্ম**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%B8-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE): Windows, macOS, এবং Linux এ উপলব্ধ।</li>
-<li>[**অটোমেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%85%E0%A6%9F%E0%A7%8B%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%A8): স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
-<li>[**ইন্টিগ্রেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8): অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
-<li>[**ইন্টারেক্টিভ মোড**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%AD%20%E0%A6%AE%E0%A7%8B%E0%A6%A1): ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
+<li>*ক্রস-প্ল্যাটফর্ম* Windows, macOS, এবং Linux এ উপলব্ধ।</li>
+<li>*অটোমেশন* স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
+<li>*ইন্টিগ্রেশন* অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
+<li>*ইন্টারেক্টিভ মোড* ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
 </ul>
 
 <h2>Azure CLI ইনস্টলেশন</h2>
 <p>Azure CLI ইনস্টল করার জন্য, আপনি বিভিন্ন পদ্ধতি ব্যবহার করতে পারেন:</p>
 <ul>
-<li>[**Windows**](https://www.bing.com/search?form=SKPBOT&q=Windows): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**macOS**](https://www.bing.com/search?form=SKPBOT&q=macOS): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Linux**](https://www.bing.com/search?form=SKPBOT&q=Linux): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Docker**](https://www.bing.com/search?form=SKPBOT&q=Docker): <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
+<li>*Windows* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
+<li>*macOS* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Linux* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Docker* <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
 </ul>
 
 <h2>Azure CLI এ লগইন</h2>
@@ -416,26 +472,26 @@ display: inline-block;
 
 <h2>Azure CLI এর সাধারণ কমান্ডসমূহ</h2>
 <ul>
-<li>[**রিসোর্স গ্রুপ তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
-<li>[**ভি এম তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%AD%E0%A6%BF%20%E0%A6%8F%E0%A6%AE%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
-<li>[**স্টোরেজ অ্যাকাউন্ট তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%9C%20%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%9F%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
-<li>[**ডাটাবেস তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%A1%E0%A6%BE%E0%A6%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B8%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
+<li>*রিসোর্স গ্রুপ তৈরি করা* <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
+<li>*ভি এম তৈরি করা* <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
+<li>*স্টোরেজ অ্যাকাউন্ট তৈরি করা* <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
+<li>*ডাটাবেস তৈরি করা* <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
 </ul>
 
 <h2>Azure CLI এর কিছু গুরুত্বপূর্ণ টুলস</h2>
 <ul>
-<li>[**Azure Resource Manager (ARM)**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Resource%20Manager%20%28ARM%29): এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Monitor**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Monitor): এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
-<li>[**Azure Cost Management**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Cost%20Management): এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Security Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Security%20Center): এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
+<li>*Azure Resource Manager (ARM)* এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Monitor* এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
+<li>*Azure Cost Management* এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Security Center* এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
 </ul>
 
 <h2>শিক্ষার্থীদের জন্য কিছু গুরুত্বপূর্ণ রিসোর্স</h2>
 <ul>
-<li>[**Azure Documentation**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Documentation): <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
-<li>[**Microsoft Learn**](https://www.bing.com/search?form=SKPBOT&q=Microsoft%20Learn): <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
-<li>[**Azure Quickstart Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Quickstart%20Center): এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
-<li>[**Azure CLI API Documentation**](https://www.bing.com/search?form=SKPBOT&q=Azure%20CLI%20API%20Documentation): <a href="https://learn.microsoft.com/en-us/rest/api/azure/">Azure CLI API Documentation</a> পেজে গিয়ে আপনি API ডকুমেন্টেশন পেতে পারেন।</li>
+<li>*Azure Documentation* <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
+<li>*Microsoft Learn* <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
+<li>*Azure Quickstart Center* এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
+<li>*Azure CLI API Documentation* <a href="https://learn.microsoft.com/en-us/rest/api/azure/">Azure CLI API Documentation</a> পেজে গিয়ে আপনি API ডকুমেন্টেশন পেতে পারেন।</li>
 </ul>
 
 
@@ -454,19 +510,19 @@ display: inline-block;
 <p>নিচে Azure CLI সম্পর্কে বিস্তারিত তথ্য সহ একটি HTML ফাইলের কোড দেওয়া হলো, যেখানে Azure CLI API ডকুমেন্টেশনের লিঙ্কও যুক্ত করা হয়েছে:</p>
 <h2>Azure CLI এর মূল বৈশিষ্ট্যসমূহ</h2>
 <ul>
-<li>[**ক্রস-প্ল্যাটফর্ম**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%B8-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%AB%E0%A6%B0%E0%A7%8D%E0%A6%AE): Windows, macOS, এবং Linux এ উপলব্ধ।</li>
-<li>[**অটোমেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%85%E0%A6%9F%E0%A7%8B%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%A8): স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
-<li>[**ইন্টিগ্রেশন**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B6%E0%A6%A8): অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
-<li>[**ইন্টারেক্টিভ মোড**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%AD%20%E0%A6%AE%E0%A7%8B%E0%A6%A1): ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
+<li>*ক্রস-প্ল্যাটফর্ম* Windows, macOS, এবং Linux এ উপলব্ধ।</li>
+<li>*অটোমেশন* স্ক্রিপ্টিং এবং অটোমেশন কাজের জন্য উপযুক্ত।</li>
+<li>*ইন্টিগ্রেশন* অন্যান্য টুল এবং পরিষেবার সাথে সহজে ইন্টিগ্রেট করা যায়।</li>
+<li>*ইন্টারেক্টিভ মোড* ইন্টারেক্টিভ মোডে কাজ করার সুবিধা।</li>
 </ul>
 
 <h2>Azure CLI ইনস্টলেশন</h2>
 <p>Azure CLI ইনস্টল করার জন্য, আপনি বিভিন্ন পদ্ধতি ব্যবহার করতে পারেন:</p>
 <ul>
-<li>[**Windows**](https://www.bing.com/search?form=SKPBOT&q=Windows): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**macOS**](https://www.bing.com/search?form=SKPBOT&q=macOS): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Linux**](https://www.bing.com/search?form=SKPBOT&q=Linux): <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
-<li>[**Docker**](https://www.bing.com/search?form=SKPBOT&q=Docker): <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
+<li>*Windows* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows">Windows এ Azure CLI ইনস্টলেশন</a></li>
+<li>*macOS* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos">macOS এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Linux* <a href="https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux">Linux এ Azure CLI ইনস্টলেশন</a></li>
+<li>*Docker* <a href="https://learn.microsoft.com/en-us/cli/azure/run-azure-cli-docker">Docker কন্টেইনারে Azure CLI চালানো</a></li>
 </ul>
 
 <h2>Azure CLI এ লগইন</h2>
@@ -476,89 +532,31 @@ display: inline-block;
 
 <h2>Azure CLI এর সাধারণ কমান্ডসমূহ</h2>
 <ul>
-<li>[**রিসোর্স গ্রুপ তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
-<li>[**ভি এম তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%AD%E0%A6%BF%20%E0%A6%8F%E0%A6%AE%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
-<li>[**স্টোরেজ অ্যাকাউন্ট তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%9C%20%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%9F%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
-<li>[**ডাটাবেস তৈরি করা**](https://www.bing.com/search?form=SKPBOT&q=%E0%A6%A1%E0%A6%BE%E0%A6%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B8%20%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%BE): <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
+<li>*রিসোর্স গ্রুপ তৈরি করা* <pre><code>az group create --name MyResourceGroup --location eastus</code></pre></li>
+<li>*ভি এম তৈরি করা* <pre><code>az vm create --resource-group MyResourceGroup --name MyVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys</code></pre></li>
+<li>*স্টোরেজ অ্যাকাউন্ট তৈরি করা* <pre><code>az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS</code></pre></li>
+<li>*ডাটাবেস তৈরি করা* <pre><code>az sql db create --resource-group MyResourceGroup --server myserver --name mydatabase --service-objective S0</code></pre></li>
 </ul>
 
 <h2>Azure CLI এর কিছু গুরুত্বপূর্ণ টুলস</h2>
 <ul>
-<li>[**Azure Resource Manager (ARM)**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Resource%20Manager%20%28ARM%29): এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Monitor**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Monitor): এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
-<li>[**Azure Cost Management**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Cost%20Management): এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
-<li>[**Azure Security Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Security%20Center): এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
+<li>*Azure Resource Manager (ARM)* এটি আপনাকে রিসোর্স গ্রুপ তৈরি এবং পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Monitor* এটি আপনাকে আপনার রিসোর্সগুলির পারফরম্যান্স এবং স্বাস্থ্য মনিটর করতে দেয়।</li>
+<li>*Azure Cost Management* এটি আপনাকে আপনার খরচ এবং বাজেট পরিচালনা করতে সাহায্য করে।</li>
+<li>*Azure Security Center* এটি আপনার রিসোর্সগুলির নিরাপত্তা নিশ্চিত করতে সাহায্য করে।</li>
 </ul>
 
 <h2>শিক্ষার্থীদের জন্য কিছু গুরুত্বপূর্ণ রিসোর্স</h2>
 <ul>
-<li>[**Azure Documentation**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Documentation): <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
-<li>[**Microsoft Learn**](https://www.bing.com/search?form=SKPBOT&q=Microsoft%20Learn): <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
-<li>[**Azure Quickstart Center**](https://www.bing.com/search?form=SKPBOT&q=Azure%20Quickstart%20Center): এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
-<li>[**Azure CLI API Documentation**](https://www.bing.com/search?form=SKPBOT&q=Azure%20CLI%20API%20Documentation): <a href="https://learn.microsoft.com/en-us/rest/api/azure/">Azure CLI API Documentation</a> পেজে গিয়ে আপনি API ডকুমেন্টেশন পেতে পারেন।</li>
+<li>*Azure Documentation* <a href="https://learn.microsoft.com/en-us/cli/azure/">Azure CLI Documentation</a> পেজে গিয়ে আপনি বিভিন্ন টিউটোরিয়াল এবং গাইড পেতে পারেন।</li>
+<li>*Microsoft Learn* <a href="https://learn.microsoft.com/en-us/training/azure/">Microsoft Learn</a> পেজে গিয়ে আপনি বিভিন্ন কোর্স এবং লার্নিং পাথ পেতে পারেন।</li>
+<li>*Azure Quickstart Center* এটি আপনাকে দ্রুত শুরু করতে সাহায্য করে এবং বিভিন্ন প্রজেক্টের জন্য গাইড প্রদান করে।</li>
+<li>*Azure CLI API Documentation* <a href="https://learn.microsoft.com/en-us/rest/api/azure/">Azure CLI API Documentation</a> পেজে গিয়ে আপনি API ডকুমেন্টেশন পেতে পারেন।</li>
 </ul>
     </div>
 </body>
 </html>
 </html>
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>জ্ঞান ও বিশ্বাসের সমন্বয়ে এক উজ্জ্বল প্রজন্মের প্রত্যাশায়</title>
-<style>
-.slideshow-container {
-width: 100%;
-position: relative;
-margin: auto;
-}
-
-.mySlides {
-display: none;
-width: 100%;
-height: auto;
-}
-
-.active {
-display: block;
-}
-</style>
-</head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides active">
-<img src="emojib4.png" style="width:100%">
-</div>
-
-<div class="mySlides">
-<img src="emojib3.png" style="width:100%">
-</div>
-
-<div class="mySlides">
-<img src="emojib2.png" style="width:100%">
-</div>
-
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-for (i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";  
-}
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}    
-slides[slideIndex-1].style.display = "block";  
-setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 
 </body>
 </html>
