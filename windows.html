@@ -560,6 +560,108 @@ display: inline-block;
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure App Hosting এবং Microsoft Entra ID ব্যবহার করে ডাটা ইমপোর্ট</title>
+</head>
+<body>
+<h1>Azure App Hosting এবং Microsoft Entra ID ব্যবহার করে ডাটা ইমপোর্ট</h1>
+
+<h2>ধাপ ১: Azure App Service এ আপনার অ্যাপ্লিকেশন ডিপ্লয় করা</h2>
+<ol>
+<li>Azure Portal এ লগইন করুন এবং একটি নতুন App Service তৈরি করুন।</li>
+<li>আপনার অ্যাপ্লিকেশন কোড (HTML, PHP ফাইল) GitHub থেকে Azure App Service এ ডিপ্লয় করুন।
+<ul>
+<li>Azure Portal এ আপনার App Service এ যান।</li>
+<li>Deployment Center এ যান এবং GitHub নির্বাচন করুন।</li>
+<li>আপনার রিপোজিটরি এবং ব্রাঞ্চ নির্বাচন করুন এবং Save করুন।</li>
+</ul>
+</li>
+</ol>
+
+<h2>ধাপ ২: Microsoft Entra ID (আগে Azure AD) সেটআপ করা</h2>
+<ol>
+<li>Azure Portal এ Azure Active Directory এ যান।</li>
+<li>App registrations এ একটি নতুন অ্যাপ্লিকেশন রেজিস্টার করুন।</li>
+<li>Redirect URI হিসেবে আপনার অ্যাপ্লিকেশনের URL দিন।</li>
+<li>Certificates & secrets এ একটি নতুন ক্লায়েন্ট সিক্রেট তৈরি করুন এবং এটি সংরক্ষণ করুন।</li>
+</ol>
+
+<h2>ধাপ ৩: Azure CLI ব্যবহার করে অ্যাপ্লিকেশন কনফিগার করা</h2>
+<ol>
+<li>Azure CLI ইনস্টল এবং লগইন করুন:
+<pre><code>az login</code></pre>
+</li>
+<li>আপনার অ্যাপ্লিকেশন কনফিগারেশন আপডেট করুন:
+<pre><code>az webapp config appsettings set --name <your-app-name> --resource-group <your-resource-group> --settings "CLIENT_ID=<your-client-id>" "CLIENT_SECRET=<your-client-secret>" "TENANT_ID=<your-tenant-id>"</code></pre>
+</li>
+</ol>
+
+<h2>ধাপ ৪: PHP ফাইলে ডাটা ইমপোর্ট করার কোড লেখা</h2>
+<ol>
+<li>আপনার PHP ফাইলে Microsoft Entra ID থেকে টোকেন সংগ্রহ করুন:
+<pre><code><?php
+$tenantId = getenv('TENANT_ID');
+$clientId = getenv('CLIENT_ID');
+$clientSecret = getenv('CLIENT_SECRET');
+$resource = "https://graph.microsoft.com";
+
+$url = "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token";
+$data = array(
+'client_id' => $clientId,
+'scope' => 'https://graph.microsoft.com/.default',
+'client_secret' => $clientSecret,
+'grant_type' => 'client_credentials'
+);
+
+$options = array(
+'http' => array(
+'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+'method'  => 'POST',
+'content' => http_build_query($data),
+),
+);
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+$response = json_decode($result, true);
+$accessToken = $response['access_token'];
+?></code></pre>
+</li>
+<li>পাবলিক সার্ভার থেকে ডাটা ইমপোর্ট করুন:
+<pre><code><?php
+// পূর্বের কোডের পরে
+$apiUrl = "https://public-server-url/api/data";
+$options = array(
+'http' => array(
+'header'  => "Authorization: Bearer $accessToken\r\n",
+'method'  => 'GET',
+),
+);
+$context  = stream_context_create($options);
+$result = file_get_contents($apiUrl, false, $context);
+$data = json_decode($result, true);
+
+// ডাটা প্রিন্ট বা প্রসেস করুন
+print_r($data);
+?></code></pre>
+</li>
+</ol>
+
+<h2>ধাপ ৫: লোকালহোস্টে পরীক্ষা করা</h2>
+<ol>
+<li>আপনার লোকালহোস্টে PHP সার্ভার চালু করুন:
+<pre><code>php -S localhost:8000</code></pre>
+</li>
+<li>আপনার ব্রাউজারে <code>http://localhost:8000</code> এ যান এবং ডাটা ইমপোর্ট হচ্ছে কিনা পরীক্ষা করুন।</li>
+</ol>
+</body>
+</html>
+
+
+    
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Command Line এবং PowerShell কমান্ড</title>
 </head>
 
