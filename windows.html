@@ -667,25 +667,22 @@ print_r($data);
         <head>
             <body>
                 <div class="new-section">
-         
-    <p>আপনি LocalHost এ সেইভ করা PHP ফাইলটি আপনার GitHub রিপোজিটরিতে যেখানে HTML ফাইলটি রয়েছে সেখানে রাখতে পারেন। এটি করার জন্য নিম্নলিখিত ধাপগুলি অনুসরণ করুন:
-
-1. 
-PHP ফাইলটি GitHub রিপোজিটরিতে যুক্ত করা:
-•  আপনার PHP ফাইলটি আপনার লোকাল রিপোজিটরিতে কপি করুন যেখানে আপনার HTML ফাইলটি রয়েছে।
-
-•  রিপোজিটরিতে PHP ফাইলটি যুক্ত করুন এবং কমিট করুন:
-
-git add <your-php-file>.php
-git commit -m "Add PHP file for data import"
-git push origin <your-branch>
-
-1. 
-Azure App Service এ রিপোজিটরি আপডেট করা:
-•  আপনার GitHub রিপোজিটরিতে পরিবর্তনগুলি পুশ করার পরে, Azure App Service স্বয়ংক্রিয়ভাবে আপনার অ্যাপ্লিকেশনটি আপডেট করবে যদি আপনি পূর্বে Deployment Center এ সেটআপ করে থাকেন।
-2. 
-PHP ফাইলটি অ্যাক্সেস করা:
-•  আপনার অ্যাপ্লিকেশনের URL এ যান এবং PHP ফাইলটি অ্যাক্সেস করুন। উদাহরণস্বরূপ, যদি আপনার PHP ফাইলটির নাম import.php হয় এবং আপনার অ্যাপ্লিকেশনের URL https://your-app-name.azurewebsites.net হয়, তাহলে আপনি https://your-app-name.azurewebsites.net/import.php এ যেতে পারেন।
+      <ul>
+          <li><p>আপনি LocalHost এ সেইভ করা PHP ফাইলটি আপনার GitHub রিপোজিটরিতে যেখানে HTML ফাইলটি রয়েছে সেখানে রাখতে পারেন। এটি করার জন্য নিম্নলিখিত ধাপগুলি অনুসরণ করুন:</li>
+          <li>
+PHP ফাইলটি GitHub রিপোজিটরিতে যুক্ত করা:</li>
+          <li><strong>আপনার PHP ফাইলটি আপনার লোকাল রিপোজিটরিতে কপি করুন যেখানে আপনার HTML ফাইলটি রয়েছে।</strong></li>
+          <li><strong>রিপোজিটরিতে PHP ফাইলটি যুক্ত করুন এবং কমিট করুন:</strong></li>
+      </ul>
+                    <p>git add <your-php-file>.php</p>
+                    <p>git commit -m "Add PHP file for data import"</p>
+                    <p>git push origin <your-branch></p>
+                    <ul>
+                        <li>Azure App Service এ রিপোজিটরি আপডেট করা:</li>
+                        <li>//আপনার GitHub রিপোজিটরিতে পরিবর্তনগুলি পুশ করার পরে, Azure App Service স্বয়ংক্রিয়ভাবে আপনার অ্যাপ্লিকেশনটি আপডেট করবে যদি আপনি পূর্বে Deployment Center এ সেটআপ করে থাকেন।</li>
+                        <li>PHP ফাইলটি অ্যাক্সেস করা:</li>
+                        <li>//আপনার অ্যাপ্লিকেশনের URL এ যান এবং PHP ফাইলটি অ্যাক্সেস করুন। উদাহরণস্বরূপ, যদি আপনার PHP ফাইলটির নাম import.php হয় এবং আপনার অ্যাপ্লিকেশনের URL https://your-app-name.azurewebsites.net হয়,</li>
+                        <p>তাহলে আপনি https://your-app-name.azurewebsites.net/import.php এ যেতে পারেন।</p>
 
 এইভাবে, আপনি আপনার PHP ফাইলটি GitHub রিপোজিটরিতে যুক্ত করে Azure App Service এ ডিপ্লয় করতে পারবেন </your-branch></your-php-file></p>
   <p>  গিটহাব রিপোজিটরি ক্লোন করা
